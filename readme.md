@@ -50,3 +50,7 @@ notemaking-app/
 │
 ├── .gitignore
 └── README.md
+
+Notes/Learnings : 
+app.use(express.urlencoded({ extended: true })); 
+- Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option

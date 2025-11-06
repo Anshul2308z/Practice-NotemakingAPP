@@ -48,7 +48,6 @@ const createNote = async (req, res) => {
         if ( !title || !content){
             return res.status(400).json({ message: 'Please provide title and content'}); 
         }
-
         const note = await Note.create({
             title, 
             content, 
@@ -57,6 +56,7 @@ const createNote = async (req, res) => {
 
         res.status(200).json(note); 
     }catch (error) {
+    console.error(error);
     res.status(500).json({ message: error.message });
   }
 };
