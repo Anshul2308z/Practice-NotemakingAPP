@@ -4,12 +4,14 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
         <div className='App'>
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/login" element={<Login/>}/>
