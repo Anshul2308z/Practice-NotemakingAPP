@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -20,9 +21,7 @@ function App() {
               path='/dashboard'
               element={
                 <ProtectedRoute>
-                  <h1 style={{padding: '40px',textAlign: 'center'}}>
-                    Dashboard - Coming Next!
-                  </h1>
+                  <Dashboard/>
                 </ProtectedRoute>
               }
             />
