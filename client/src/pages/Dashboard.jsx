@@ -106,7 +106,7 @@ const Dashboard = () => {
       <div className="dashboard-header">
         <div className="dashboard-title">
           <h1>My Notes</h1>
-          <p>Welcome back, {user?.name}! 👋</p>
+          <p>Welcome back, {user ? user : ''}! 👋</p>
         </div>
         <div className="dashboard-actions">
           <button
